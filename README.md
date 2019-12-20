@@ -19,7 +19,7 @@ From 2008 to 2013, NEPS data was collected as part of the Framework Program for 
 As of 2014, NEPS is carried out by the Leibniz Institute for Educational Trajectories (LIfBi) at the University of Bamberg in cooperation with a nationwide network. 
 Data access requires the conclusion of a Data Use Agreement with the Leibniz Institute for Educational Trajectories (LIfBi), see https://www.neps-data.de/en-us/datacenter/dataaccess/datauseagreements.aspx.
 
-This GitHub project contains the source code for data preparation and analysis (with BART), as well as for plotting the results.
+This GitHub project contains the source code for data preparation and analysis (with BART and logistic regression with LASSO penalization), as well as for validation and plotting the results.
 1. loadData.R (editing and preparing data using the NEPS SUF files)
 
 2. modelPermanentDropout_BART.R (BART model for passing over to permanent drop out; in our case this means leaving the NEPS school context)
