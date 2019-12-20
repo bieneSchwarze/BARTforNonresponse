@@ -28,22 +28,22 @@ This GitHub project contains the source code for data preparation and analysis (
 
 4. combineResults_getJointProbabilities.R (predicting participation probabilities in the distinct survey waves for new samples)
 
-A1.	modelPermanentDropout_BART_crossValidation (cross validation for BART model for permanent dropout)
+A1.	modelPermanentDropout_BART_crossValidation.R (cross validation for BART model for permanent dropout)
 
-A2.	modelPermanentDropout_BART_validationLeaveOneWaveOut (validation 'leave last wave out' for BART model for permanent dropout)
+A2.	modelPermanentDropout_BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for permanent dropout)
 
-A3.	modelPermanentDropout_logitLasso (logistic regression with LASSO for permanent dropout, for model comparision)
-A4.	modelPermanentDropout_logitLasso_crossValidation (cross validation for LASSO logistic regression model for permanent dropout)
+A3.	modelPermanentDropout_logitLasso.R (logistic regression with LASSO for permanent dropout, for model comparision)
+A4.	modelPermanentDropout_logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for permanent dropout)
 
-A5.	modelPermanentDropout_logitLasso_validationLeaveOneWaveOut (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
+A5.	modelPermanentDropout_logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
 
-B1.	modelTempDropout _BART_crossValidation (cross validation for BART model for temporary dropout)
+B1.	modelTempDropout _BART_crossValidation.R (cross validation for BART model for temporary dropout)
 
-B2.	modelTempDropout _BART_validationLeaveOneWaveOut (validation 'leave last wave out' for BART model for temporary dropout)
+B2.	modelTempDropout _BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for temporary dropout)
 
-B3.	modelTempDropout_logitLasso (logistic regression with LASSO for temporary dropout, for model comparision)
+B3.	modelTempDropout_logitLasso.R (logistic regression with LASSO for temporary dropout, for model comparision)
 
-B4.	modelTempDropout _logitLasso_crossValidation (cross validation for LASSO logistic regression model for temporary dropout)
+B4.	modelTempDropout _logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for temporary dropout)
 
-B5.	modelTempDropout _logitLasso_validationLeaveOneWaveOut (validation 'leave last wave out' for LASSO logistic regression model for temporary dropout)
+B5.	modelTempDropout _logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for temporary dropout)
 
