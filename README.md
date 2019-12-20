@@ -1,6 +1,6 @@
 # BARTforNonresponse
 Analyzing Nonresponse in Longitudinal Surveys Using Bayesian Additive Regression Trees: A Nonparametric Event History Analysis
-Date: 24.06.2019 (Version 1.0.0)
+Date: 18.12.2019 (Version 2.0.0, revision 1)
 
 This is the online material for the publication (currently under review): Analyzing Nonresponse in Longitudinal Surveys Using Bayesian Additive Regression Trees:
 A Nonparametric Event History Analysis
@@ -24,13 +24,23 @@ This GitHub project contains the source code for data preparation and analysis (
 2.	modelPermanentDropout_BART.R (BART model for passing over to permanent drop out, in our case this means leaving the NEPS school context.)
 3.	modelTempDropout_BART.R (BART model for temporary dropout in the school context.)
 4.	combineResults_getJointProbabilities.R (Predicting participation probabilities in the distinct survey waves for new samples)
+
 A1. modelPermanentDropout_BART_crossValidation (cross validation for BART model for permanent dropout)
+
 A2. modelPermanentDropout_BART_validationLeaveOneWaveOut (validation 'leave last wave out' for BART model for permanent dropout)
+
 A3. modelPermanentDropout_logitLasso (logistic regression with LASSO for permanent dropout, for model comparision)
+
 A4. modelPermanentDropout_logitLasso_crossValidation (cross validation for LASSO logistic regression model for permanent dropout)
+
 A5. modelPermanentDropout_logitLasso_validationLeaveOneWaveOut (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
+
 B1. modelPermanentDropout_BART_crossValidation (cross validation for BART model for temporary dropout)
+
 B2. modelPermanentDropout_BART_validationLeaveOneWaveOut (validation 'leave last wave out' for BART model for temporary dropout)
+
 B3. modelPermanentDropout_logitLasso (logistic regression with LASSO for temporary dropout, for model comparision)
+
 B4. modelPermanentDropout_logitLasso_crossValidation (cross validation for LASSO logistic regression model for temporary dropout)
+
 B5. modelPermanentDropout_logitLasso_validationLeaveOneWaveOut (validation 'leave last wave out' for LASSO logistic regression model for temporary dropout)
