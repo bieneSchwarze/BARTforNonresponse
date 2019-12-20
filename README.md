@@ -12,14 +12,7 @@ By Sabine Zinn (1,2) & Timo Gnambs (2,3)
 (3) Johannes Kepler University Linz
 
 Abstract: 	
-Increasing nonresponse rates are a pressing issue for many longitudinal panel studies. 
-Respondents frequently either refuse participation in single survey waves (temporary dropout) or discontinue participation altogether (permanent dropout). 
-ontemporary statistical methods that are used to elucidate predictors of survey nonresponse are typically limited to small variable sets and ignore complex interaction patterns. 
-The innovative approach of Bayesian additive regression trees (BART) is an elegant way to overcome these limitations. 
-We present a BART event history analyses that allow identifying predictors for different types of nonresponse to anticipate response rates for upcoming survey waves. 
-We apply our novel method to data from a German large-scale assessment including N = 4,559 students in grade 5 that observed nonresponse rates of up to 36% across five waves. 
-The results highlight the potential of Bayesian discrete time event modeling for the prediction of participation rates across multiple survey waves. 
-Finally, potential applications of this approach for operational use in survey management are outlined.
+Increasing nonresponse rates are a pressing issue for many longitudinal panel studies. Respondents frequently either refuse participation in single survey waves (temporary dropout) or discontinue participation altogether (permanent dropout). Contemporary statistical methods that are used to elucidate predictors of survey nonresponse are typically limited to small variable sets and ignore complex interaction patterns. The innovative approach of Bayesian additive regression trees (BART) is an elegant way to overcome these limitations because it does not specify a parametric form for the relationship between the outcome and its predictors. We present a BART event history analysis that allows identifying predictors for different types of nonresponse to anticipate response rates for upcoming survey waves. We apply our novel method to data from the German National Educational Panel study including N = 4,559 students in grade 5 that observed nonresponse rates of up to 36% across five waves. A cross-validation and comparison with logistic regression models with LASSO (least absolute shrinkage and selection operator) penalization underline the advantages of the approach. Our results highlight the potential of Bayesian discrete time event modeling for the long-term projection of panel stability across multiple survey waves. Finally, potential applications of this approach for operational use in survey management are outlined.
 
 We use data from the National Educational Panel Study (NEPS): Starting Cohort Grade 5, doi:10.5157/NEPS:SC3:8.0.0. 
 From 2008 to 2013, NEPS data was collected as part of the Framework Program for the Promotion of Empirical Educational Research funded by the German Federal Ministry of Education and Research (BMBF). 
@@ -28,6 +21,16 @@ Data access requires the conclusion of a Data Use Agreement with the Leibniz Ins
 
 This GitHub project contains the source code for data preparation and analysis (with BART), as well as for plotting the results.
 1.	loadData.R (Editing and preparing data using the NEPS SUF files.)
-2.	modelIndF.R (BART model for passing over to permanent drop out, in our case this means leaving the NEPS school context.)
-3.	modelParticipation.R (BART model for temporary dropout in the school context.)
-4.	combineResults.R (Predicting participation probabilities in the distinct survey waves for new samples)
+2.	modelPermanentDropout_BART.R (BART model for passing over to permanent drop out, in our case this means leaving the NEPS school context.)
+3.	modelTempDropout_BART.R (BART model for temporary dropout in the school context.)
+4.	combineResults_getJointProbabilities.R (Predicting participation probabilities in the distinct survey waves for new samples)
+A1. modelPermanentDropout_BART_crossValidation (cross validation for BART model for permanent dropout)
+A2. modelPermanentDropout_BART_validationLeaveOneWaveOut (validation 'leave last wave out' for BART model for permanent dropout)
+A3. modelPermanentDropout_logitLasso (logistic regression with LASSO for permanent dropout, for model comparision)
+A4. modelPermanentDropout_logitLasso_crossValidation (cross validation for LASSO logistic regression model for permanent dropout)
+A5. modelPermanentDropout_logitLasso_validationLeaveOneWaveOut (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
+B1. modelPermanentDropout_BART_crossValidation (cross validation for BART model for temporary dropout)
+B2. modelPermanentDropout_BART_validationLeaveOneWaveOut (validation 'leave last wave out' for BART model for temporary dropout)
+B3. modelPermanentDropout_logitLasso (logistic regression with LASSO for temporary dropout, for model comparision)
+B4. modelPermanentDropout_logitLasso_crossValidation (cross validation for LASSO logistic regression model for temporary dropout)
+B5. modelPermanentDropout_logitLasso_validationLeaveOneWaveOut (validation 'leave last wave out' for LASSO logistic regression model for temporary dropout)
