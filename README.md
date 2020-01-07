@@ -34,6 +34,7 @@ This GitHub project contains the source code for data preparation and analysis (
 -- A2.	modelPermanentDropout_BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for permanent dropout)
 
 -- A3.	modelPermanentDropout_logitLasso.R (logistic regression with LASSO for permanent dropout, for model comparision)
+
 -- A4.	modelPermanentDropout_logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for permanent dropout)
 
 -- A5.	modelPermanentDropout_logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
