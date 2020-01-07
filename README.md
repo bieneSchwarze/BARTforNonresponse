@@ -20,30 +20,31 @@ As of 2014, NEPS is carried out by the Leibniz Institute for Educational Traject
 Data access requires the conclusion of a Data Use Agreement with the Leibniz Institute for Educational Trajectories (LIfBi), see https://www.neps-data.de/en-us/datacenter/dataaccess/datauseagreements.aspx.
 
 This GitHub project contains the source code for data preparation and analysis (with BART and logistic regression with LASSO penalization), as well as for validation and plotting the results.
-1. loadData.R (editing and preparing data using the NEPS SUF files)
 
-2. modelPermanentDropout_BART.R (BART model for passing over to permanent drop out; in our case this means leaving the NEPS school context)
+-- 1. loadData.R (editing and preparing data using the NEPS SUF files)
 
-3. modelTempDropout_BART.R (BART model for temporary dropout in the school context)
+-- 2. modelPermanentDropout_BART.R (BART model for passing over to permanent drop out; in our case this means leaving the NEPS school context)
 
-4. combineResults_getJointProbabilities.R (predicting participation probabilities in the distinct survey waves for new samples)
+-- 3. modelTempDropout_BART.R (BART model for temporary dropout in the school context)
 
-A1.	modelPermanentDropout_BART_crossValidation.R (cross validation for BART model for permanent dropout)
+-- 4. combineResults_getJointProbabilities.R (predicting participation probabilities in the distinct survey waves for new samples)
 
-A2.	modelPermanentDropout_BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for permanent dropout)
+-- A1.	modelPermanentDropout_BART_crossValidation.R (cross validation for BART model for permanent dropout)
 
-A3.	modelPermanentDropout_logitLasso.R (logistic regression with LASSO for permanent dropout, for model comparision)
-A4.	modelPermanentDropout_logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for permanent dropout)
+-- A2.	modelPermanentDropout_BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for permanent dropout)
 
-A5.	modelPermanentDropout_logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
+-- A3.	modelPermanentDropout_logitLasso.R (logistic regression with LASSO for permanent dropout, for model comparision)
+-- A4.	modelPermanentDropout_logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for permanent dropout)
 
-B1.	modelTempDropout _BART_crossValidation.R (cross validation for BART model for temporary dropout)
+-- A5.	modelPermanentDropout_logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for permanent dropout)
 
-B2.	modelTempDropout _BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for temporary dropout)
+-- B1.	modelTempDropout _BART_crossValidation.R (cross validation for BART model for temporary dropout)
 
-B3.	modelTempDropout_logitLasso.R (logistic regression with LASSO for temporary dropout, for model comparision)
+-- B2.	modelTempDropout _BART_validationLeaveOneWaveOut.R (validation 'leave last wave out' for BART model for temporary dropout)
 
-B4.	modelTempDropout _logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for temporary dropout)
+-- B3.	modelTempDropout_logitLasso.R (logistic regression with LASSO for temporary dropout, for model comparision)
 
-B5.	modelTempDropout _logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for temporary dropout)
+-- B4.	modelTempDropout _logitLasso_crossValidation.R (cross validation for LASSO logistic regression model for temporary dropout)
+
+-- B5.	modelTempDropout _logitLasso_validationLeaveOneWaveOut.R (validation 'leave last wave out' for LASSO logistic regression model for temporary dropout)
 
