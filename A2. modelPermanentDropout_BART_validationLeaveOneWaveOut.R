@@ -1,6 +1,6 @@
 ################################################################################
 ################################################################################
-## BART FOR PREDICTING PARTICIPATION PROBABILITIES
+## BART FOR PREDICTING PERMANENT DROPOUT
 ## Validation on level of waves (validation 'leave last wave out')
 ## 05.11.2019
 ## Sabine Zinn
@@ -72,7 +72,7 @@ post <- surv.bart(x.train, times=times, delta=delta,
 save.image("Z:/Projects/p000139_Methoden_Survey_Psych/BART_Project/Results/modelIndF_est_validLevelWave.Rdata")
 
 ################################################################################
-# V. VALIDATION (on the level of wave 4
+# V. VALIDATION on the level of wave 4
 # (in paper this refers to wave 5, here counting starts at wave 0)
 ################################################################################
 D.test <- D[D$time %in% c(3,4),] 

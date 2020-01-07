@@ -1,6 +1,6 @@
 ################################################################################
 ################################################################################
-## BART FOR PREDICTING PARTICIPATION PROBABILITIES
+## BART FOR PREDICTING PERMANENT DROPOUT
 ## Validation on level of individuals (i.e., cross-validation)
 ## 28.10.2019
 ## Sabine Zinn

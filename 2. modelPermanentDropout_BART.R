@@ -1,6 +1,6 @@
 ################################################################################
 ################################################################################
-## BART FOR PREDICTING PARTICIPATION PROBABILITIES
+## BART FOR PREDICTING PERMANENT DROPOUT
 ## Level: school context
 ## 18.03.2019
 ## Sabine Zinn

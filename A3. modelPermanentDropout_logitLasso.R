@@ -1,7 +1,6 @@
 ################################################################################
 ################################################################################
-## LOGIT REGRESSION WITH LASSO REGULARIZATION 
-## FOR PREDICTING PARTICIPATION OF PERMANENT DROPOUT
+## LOGIT REGRESSION WITH LASSO REGULARIZATION FOR PREDICTING PERMANENT DROPOUT
 ## 27.10.2019
 ## Sabine Zinn
 ################################################################################
